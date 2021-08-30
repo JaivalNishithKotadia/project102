@@ -18,13 +18,15 @@ def proces():
         if os.path.exists(path+'/'+ext):
             shutil.move(path+'/'+file,path+'/'+ext+'/'+file)
             print('Your Files Has Been Organised Successfully')
-            tkinter.messagebox.showinfo('Success','Your Files Has Been Organised Successfully')
+            
             
         else:
             os.makedirs(path+'/'+ext)
             shutil.move(path+'/'+file,path+'/'+ext+'/'+file)
             print('Your Files Has Been Organised Successfully')
-            tkinter.messagebox.showinfo('Success','Your Files Has Been Organised Successfully')
+    
+    tkinter.messagebox.showinfo('Success','Your Files Has Been Organised Successfully')  
+            
             
         
     
